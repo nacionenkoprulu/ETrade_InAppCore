@@ -1,12 +1,9 @@
-﻿using AppCore.DataAccess.Bases;
+﻿#nullable disable
+
+using AppCore.DataAccess.Bases;
 using AppCore.Records.Bases;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AppCore.DataAccess.EntityFramework.Bases
 {
@@ -88,7 +85,6 @@ namespace AppCore.DataAccess.EntityFramework.Bases
                 Save();
             
         }
-
 
 
         public virtual void Update(TEntity entity, bool save = true)
